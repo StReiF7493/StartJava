@@ -8,11 +8,12 @@ public class Variable {
         double turboCoreSpeed = 3.70d;
         char osDisk = 'c';
         boolean isLaptop = false;
+
         System.out.println("RAM(GB) = " + ram);
         System.out.println("SSD(GB) = " + ssd);
         System.out.println("VideoMemory(GB) = " + videoMemory);
         System.out.println("HARD(GB) = " + hard);
-        System.out.println("CoreSpeed(GHz) = " +coreSpeed);
+        System.out.println("CoreSpeed(GHz) = " + coreSpeed);
         System.out.println("TurboCoreSpeed(GHz) = " + turboCoreSpeed);
         System.out.println("osDisk = " + osDisk);
         System.out.println("isLaptop = " + isLaptop);
