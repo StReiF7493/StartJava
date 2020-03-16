@@ -3,7 +3,5 @@ public class Unicode{
     for(char c = '\u0021'; c <= '\u007E'; c++){
       System.out.println(c);
     }
-
-
   }
 }
