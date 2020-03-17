@@ -7,7 +7,7 @@ public class Cycle {
         int numberOne = 2;
         int numberTwo = 8;
         while(numberTwo >= -4) {
-            numberTwo = numberTwo - numberOne;
+            numberTwo -= numberOne;
             System.out.println(numberTwo);
         }
 
@@ -16,10 +16,9 @@ public class Cycle {
         do {
             a++;
             if (a % 2 > 0) {
-            sum += a;
-            }
-        }
-        while(a < 20);
+                sum += a;
+                }
+        } while(a < 20);
             System.out.println("Сумма чисел 11+13+15+17+19 : " + sum);
     }
 }
