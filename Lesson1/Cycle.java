@@ -17,8 +17,8 @@ public class Cycle {
             a++;
             if (a % 2 > 0) {
                 sum += a;
-                }
+            }
         } while(a < 20);
-            System.out.println("Сумма чисел 11+13+15+17+19 : " + sum);
+        System.out.println("Сумма чисел 11+13+15+17+19 : " + sum);
     }
 }

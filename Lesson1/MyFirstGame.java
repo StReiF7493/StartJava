@@ -1,26 +1,26 @@
 public class MyFirstGame {
     public static void main(String[] args) {
-        int winningNumber = 40;
+        int compNumber = 40;
         int userNumber = 45;
 
-        if (winningNumber == userNumber) {
+        if (compNumber == userNumber) {
             System.out.println("Вы угадали!");
-        } if (winningNumber > userNumber) {
-            while(userNumber < winningNumber) {
-                System.out.println("Введенное вами число меньше того, что загадал компьютер");
-                userNumber++;
-        if(userNumber == winningNumber) {
+        } if (compNumber > userNumber) {
+        while(userNumber < compNumber) {
+            System.out.println("Введенное вами число меньше того, что загадал компьютер");
+            userNumber++;
+        if(userNumber == compNumber) {
             System.out.println("Вы угадали!");
         }
-            }
-          } if(userNumber > winningNumber) {
-              while(userNumber > winningNumber) {
-                  System.out.println("Введенное вами число больше того, что загадал компьютер");
-                  userNumber--;
-        if(userNumber == winningNumber) {
+        }
+        } if(userNumber > compNumber) {
+          while(userNumber > compNumber) {
+              System.out.println("Введенное вами число больше того, что загадал компьютер");
+              userNumber--;
+        if(userNumber == compNumber) {
             System.out.println("Вы угадали!");
-          }
+        }
+        }
         }
     }
-}
 }

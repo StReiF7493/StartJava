@@ -1,9 +1,10 @@
 public class Calculator {
     public static void main(String[] args) {
-        int a = 5;
-        int b = 1;
+        int a = 6;
+        int b = 2;
         int result = 1;
         char action = '^';
+
         if (action == '+') {
             result = a + b;
             System.out.println("a + b = " + result);
@@ -17,11 +18,10 @@ public class Calculator {
             result = a / b;
             System.out.println("a / b = " + result);
         } if ( action == '^') {
-        while(b <= a) {
-            result = result * a;
-            System.out.println(a + " в степени " + b + " = " + result);
-            b++;
+          for(int i = 1; i<=b; i++) {
+            result *= a;
+        }
+        System.out.println(a + " в степени " + b + " = " + result);
         }
         }
     }
-}
