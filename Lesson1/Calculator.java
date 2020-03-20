@@ -20,8 +20,8 @@ public class Calculator {
         } if ( action == '^') {
           for(int i = 1; i <= b; i++) {
             result *= a;
-        }
+          }
         System.out.println(a + " в степени " + b + " = " + result);
         }
-        }
     }
+}
