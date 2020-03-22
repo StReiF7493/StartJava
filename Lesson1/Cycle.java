@@ -4,11 +4,10 @@ public class Cycle {
             System.out.println(i);
         }
 
-        int numberOne = 2;
         int numberTwo = 6;
-        while(numberTwo >= -4) {
-            numberTwo -= 2;
+        while(numberTwo >= -6) {
             System.out.println(numberTwo);
+            numberTwo -= 2;
         }
 
         int a = 10;
