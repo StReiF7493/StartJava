@@ -19,7 +19,7 @@ public class Calculator {
             System.out.println("a / b = " + result);
         } if ( action == '^') {
             for(int i = 1; i <= b; i++) {
-            result *= a;
+                result *= a;
             }
             System.out.println(a + " в степени " + b + " = " + result);
           }

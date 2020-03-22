@@ -4,7 +4,7 @@ public class MyFirstGame {
         int userNumber = 35;
 
         if (compNumber > userNumber) {
-            while(userNumber < compNumber) {
+            while(compNumber > userNumber) {
                 System.out.println("Введенное вами число меньше того, что загадал компьютер");
                 userNumber++;
             }
@@ -14,9 +14,8 @@ public class MyFirstGame {
                 userNumber--;
             }
           }
-        if (compNumber == userNumber) {
-            System.out.println("Вы угадали!");
-        }
+        System.out.println("Вы угадали!");
+
     }
 }
 
