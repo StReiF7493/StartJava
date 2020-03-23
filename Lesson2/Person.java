@@ -1,10 +1,9 @@
 public class Person {
 
-
-    String manName = "Человек";
-    String manGender = "Мужчина";
-    float manHeight = 1.78f;
-    float manWeight = 74.5f;
+    String name = "Человек";
+    String gender = "Мужчина";
+    float height = 1.78f;
+    float weight = 74.5f;
     int manAge = 120;
 
     void move() {
