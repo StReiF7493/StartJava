@@ -4,7 +4,7 @@ public class Person {
     String gender = "Мужчина";
     float height = 1.78f;
     float weight = 74.5f;
-    int manAge = 120;
+    int age = 120;
 
     void move() {
         System.out.println("Человек идёт");
@@ -26,5 +26,4 @@ public class Person {
         System.out.println("Человек учит JAVA");
         return true;
     }
-
 }

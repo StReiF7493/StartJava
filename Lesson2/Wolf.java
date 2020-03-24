@@ -1,10 +1,10 @@
 public class Wolf {
 
-    String gender = "Самец";
-    String name = "Волчара";
-    String color = "Серый";
-    int weight = 60;
-    int age = 5;
+    String gender;
+    String name;
+    String color;
+    int weight;
+    int age;
 
     void move() {
         System.out.println("Волк пошел");
