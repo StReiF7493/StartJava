@@ -11,7 +11,6 @@ public class WolfTest {
         System.out.println("Пол волка: " + wolfOne.getgender());
         System.out.println("Кличка волка: " + wolfOne.getname());
         System.out.println("Окрас волка: " + wolfOne.getcolor());
-        System.out.println("Возраст волка: " + wolfOne.getage() + " лет");
         System.out.println("Вес волка: " + wolfOne.getweight() + " кг");
 
         wolfOne.move();

@@ -48,6 +48,7 @@ public class Wolf {
             System.out.println("Некорректный возраст");
         } else {
             this.age = age;
+            System.out.println("Возраст волка: " + age + " лет");
         }
     }
 
