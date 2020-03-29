@@ -82,6 +82,9 @@ public class Calculator {
                     for(int i = 1; i <= number2; i++) {
                     result *= number1;
                     }
+                    if(number2 == 0) {
+                        System.out.println(1);
+                    }
                     break;
             }
         }
