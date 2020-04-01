@@ -25,7 +25,7 @@ public class Calculator {
         this.number2 = number2;
     }
 
-    public void calculate() {
+    public int calculate() {
         switch(operation) {
             case '+':
                 result = number1 + number2;
@@ -47,9 +47,7 @@ public class Calculator {
             case '%':
                 result = number1 % number2;
                 break;
-            }
         }
-    public Integer calculated() {
-        return result;
+            return result;
     }
 }

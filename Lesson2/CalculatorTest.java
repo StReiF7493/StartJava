@@ -12,18 +12,19 @@ public class CalculatorTest {
         System.out.println("Введите второе число: ");
         calculatorOne.setNumber2(scan.nextInt());
         calculatorOne.calculate();
-        System.out.println("Результат математической операции: " + calculatorOne.calculated());
+        System.out.println("Результат математической операции: " + calculatorOne.calculate());
         String replay;
         do {
             System.out.println("Хотите продолжить?[да/нет]");
             replay = scan.next();
-            switch(replay) {
-                case "да":
-                    main(args);
-                    break;
-                case "нет":
-                    return;
+            if(replay.equals("да")) {
+                main(args);
+                break;
+            } else if(replay.equals("нет")) {
+                break;
+            } else {
+                continue;
             }
-        } while(replay != "нет");
+        } while(true);
     }
 }
