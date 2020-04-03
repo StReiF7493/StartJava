@@ -43,6 +43,5 @@ public class JaegerTest {
         chernoAlpha.sluggernaut();
         chernoAlpha.headshock();
         System.out.println(chernoAlpha.drift());
-
     }
 }
