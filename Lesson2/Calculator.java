@@ -3,7 +3,6 @@ public class Calculator {
     private int number1;
     private char operation;
     private int number2;
-    private int result = 1;
 
     void setNumber1(int number1) {
         this.number1 = number1;
@@ -28,26 +27,23 @@ public class Calculator {
     public int calculate() {
         switch(operation) {
             case '+':
-                result = number1 + number2;
-                break;
+                return number1 + number2;
             case '-':
-                result = number1 - number2;
-                break;
+                return number1 - number2;
             case '*':
-                result = number1 * number2;
-                break;
+                return number1 * number2;
             case '/':
-                result = number1 / number2;
-                break;
+                return number1 / number2;
             case '^':
+                int result = 1;
                 for(int i = 1; i <= number2; i++) {
                     result *= number1;
                 }
-                break;
+                return result;
             case '%':
-                result = number1 % number2;
-                break;
+                return number1 % number2;
+            default:
+                return 0;
         }
-            return result;
     }
 }
