@@ -1,7 +1,6 @@
 public class JaegerTest {
     public static void main(String[] args) {
         Jaeger gipsyDanger = new Jaeger();
-        Jaeger chernoAlpha = new Jaeger();
         gipsyDanger.setModelName("Gipsy Danger");
         gipsyDanger.setMark("Mark-3");
         gipsyDanger.setOrigin("USA");
@@ -23,6 +22,7 @@ public class JaegerTest {
         gipsyDanger.elbowRocket();
         System.out.println(gipsyDanger.drift());
 
+        Jaeger chernoAlpha = new Jaeger();
         chernoAlpha.setModelName("Cherno Alpha");
         chernoAlpha.setMark("Mark-1");
         chernoAlpha.setOrigin("Russia");

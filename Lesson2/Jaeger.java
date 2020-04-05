@@ -9,11 +9,6 @@ public class Jaeger {
     private int strength;
     private int armor;
 
-    public boolean drift() {
-        System.out.println("Вы вошли в дрифт");
-        return true;
-    }
-
     public String getModelName() {
         return modelName;
     }
@@ -92,5 +87,10 @@ public class Jaeger {
 
     public void headshock() {
         System.out.println("used Headshock");
+    }
+
+    public boolean drift() {
+        System.out.println("Вы вошли в дрифт");
+        return true;
     }
 }
