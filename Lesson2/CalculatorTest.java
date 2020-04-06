@@ -19,9 +19,7 @@ public class CalculatorTest {
             if(replay.equals("да")) {
                 main(args);
                 break;
-            } else if(replay.equals("нет")) {
-                break;
             }
-        } while(true);
+        } while(!replay.equals("нет"));
     }
 }
