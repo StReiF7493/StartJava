@@ -18,7 +18,7 @@ public class GuessNumberTest {
 
         guessNumberOne.getCompNumber();
         while(playerOne.getNumber() != guessNumberOne.getCompNumber()) {
-        System.out.println(playerOne.getName() + " - угадайте число загаданное компьютером");
+            System.out.println(playerOne.getName() + " - угадайте число загаданное компьютером");
             playerOne.setNumber(scan.nextInt());
             if (playerOne.getNumber() > guessNumberOne.getCompNumber()) {
                 System.out.println("Введеное вами число больше того, что загадал компьютер");
