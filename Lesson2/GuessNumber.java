@@ -21,20 +21,20 @@ public class GuessNumber {
                 System.out.println("Введеное вами число больше того, что загадал компьютер");
             } else if(playerOne.getNumber() < compNumber) {
                 System.out.println("Введенное вами число меньше того, что загадал компьютер");
-              } else {
-                    System.out.println("победил игрок: " + playerOne.getName());
-                    break;
-                }
+            } else {
+                System.out.println("победил игрок: " + playerOne.getName());
+                break;
+            }
             System.out.println(playerTwo.getName() + " - угадайте число загаданное компьютером");
             playerTwo.setNumber(scan.nextInt());
             if (playerTwo.getNumber() > compNumber) {
                 System.out.println("Введеное вами число больше того, что загадал компьютер");
             } else if(playerTwo.getNumber() < compNumber) {
                 System.out.println("Введенное вами число меньше того, что загадал компьютер");
-              } else {
-                    System.out.println("победил игрок: " + playerTwo.getName());
-                    break;
-                }
+            } else {
+                System.out.println("победил игрок: " + playerTwo.getName());
+                break;
+            }
         }
     }
 }
