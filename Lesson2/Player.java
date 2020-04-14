@@ -9,11 +9,6 @@ public class Player {
         this.name = name;
     }
 
-    public Player() {
-        this.number = number;
-
-    }
-
     public String getName() {
         return name;
     }
