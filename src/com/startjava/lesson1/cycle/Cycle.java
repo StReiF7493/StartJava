@@ -1,4 +1,4 @@
-package com.startjava.cycle;
+package com.startjava.lesson1.cycle;
 
 public class Cycle {
     public static void main(String[] args) {
