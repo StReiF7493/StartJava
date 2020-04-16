@@ -1,3 +1,5 @@
+package com.startjava.calculator;
+
 public class Calculator {
 
     private int number1;

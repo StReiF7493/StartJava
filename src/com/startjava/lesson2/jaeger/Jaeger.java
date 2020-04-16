@@ -1,3 +1,5 @@
+package com.startjava.jaeger;
+
 public class Jaeger {
 
     private String modelName;

@@ -1,3 +1,5 @@
+package com.startjava.calcLesson1;
+
 public class Calculator {
     public static void main(String[] args) {
         int a = 6;

@@ -1,3 +1,5 @@
+package com.startjava.jaeger;
+
 public class JaegerTest {
     public static void main(String[] args) {
         Jaeger gipsyDanger = new Jaeger("Gipsy Danger", "Mark-3", "USA", 79.25f, 1.1980f, 7, 8, 6);

@@ -1,3 +1,5 @@
+package com.startjava.wolf;
+
 public class Wolf {
 
     private String gender;
