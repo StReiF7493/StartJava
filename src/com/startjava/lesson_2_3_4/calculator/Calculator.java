@@ -2,15 +2,15 @@ package com.startjava.lesson_2_3_4.calculator;
 
 public class Calculator {
     private String operation;
-    private String input;
+    private String srcMathExpression;
     private int[] numbers = new int[2];
 
-    public void setInput(String input) {
-        this.input = input;
+    public void setsrcMathExpression(String input) {
+        this.srcMathExpression = input;
     }
 
     public int calculate() {
-        String[] splitMathExpression = input.split(" ");
+        String[] splitMathExpression = srcMathExpression.split(" ");
         numbers[0] = Integer.parseInt(splitMathExpression[0]);
         numbers[1] = Integer.parseInt(splitMathExpression[2]);
         operation = Character.toString(splitMathExpression[1].charAt(0));
