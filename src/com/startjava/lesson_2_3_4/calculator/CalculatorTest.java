@@ -6,8 +6,9 @@ public class CalculatorTest {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        System.out.print("Введите математическое выражение: ");
         Calculator calculatorOne = new Calculator();
+        System.out.print("Введите математическое выражение: ");
+        calculatorOne.setInput(scan.nextLine());
         System.out.println("Результат математической операции: " + calculatorOne.calculate());
         String replay;
         do {

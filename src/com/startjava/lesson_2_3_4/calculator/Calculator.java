@@ -1,20 +1,19 @@
 package com.startjava.lesson_2_3_4.calculator;
 
-import java.util.Scanner;
-
 public class Calculator {
-
-    Scanner scan = new Scanner(System.in);
-
     private String operation;
+    private String input;
     private int[] numbers = new int[2];
 
+    public void setInput(String input) {
+        this.input = input;
+    }
+
     public int calculate() {
-        String input = scan.nextLine();
-        String[] inputArg = input.split(" ");
-        numbers[0] = Integer.parseInt(inputArg[0]);
-        numbers[1] = Integer.parseInt(inputArg[2]);
-        operation = Character.toString(inputArg[1].charAt(0));
+        String[] splitMathExpression = input.split(" ");
+        numbers[0] = Integer.parseInt(splitMathExpression[0]);
+        numbers[1] = Integer.parseInt(splitMathExpression[2]);
+        operation = Character.toString(splitMathExpression[1].charAt(0));
 
         switch(operation) {
             case "+":
