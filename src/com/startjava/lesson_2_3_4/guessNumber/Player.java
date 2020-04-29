@@ -7,8 +7,8 @@ public class Player {
     Scanner scan = new Scanner(System.in);
     private String name;
     private int attempts;
-    int[] answers = new int[10];
     private int number;
+    int[] answers = new int[10];
 
 
     int[] answersCopy = Arrays.copyOf(answers, answers.length);
