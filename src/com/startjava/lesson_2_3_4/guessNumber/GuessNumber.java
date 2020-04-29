@@ -21,6 +21,10 @@ public class GuessNumber {
             playerTwo.setAttempts(playerTwo.getAttempts() + 1);
             if (playerOne.getAttempts() > 10 && playerTwo.getAttempts() > 10) {
                 System.out.println("У игрока " + playerOne.getName() + " закончились попытки." + " У игрока " + playerTwo.getName() + " закончились попытки");
+                System.out.print("Числа введённые игроком " + playerOne.getName() + ": ");
+                playerOne.answers();
+                System.out.print("Числа введённые игроком " + playerTwo.getName() + ": ");
+                playerTwo.answers();
                 break;
             } else {
                 System.out.println(playerOne.getName() + " - угадайте число загаданное компьютером");
@@ -45,9 +49,7 @@ public class GuessNumber {
                 }
             }
         }
-        System.out.print("Числа введённые игроком " + playerOne.getName() + ": ");
-        playerOne.answers();
-        System.out.print("Числа введённые игроком " + playerTwo.getName() + ": ");
-        playerTwo.answers();
+        playerOne.zeroing();
+        playerTwo.zeroing();
     }
 }

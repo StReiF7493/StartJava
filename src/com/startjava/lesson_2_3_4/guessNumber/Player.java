@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class Player {
     Scanner scan = new Scanner(System.in);
     private String name;
-    private int number;
     private int attempts;
     int[] answers = new int[10];
+    private int number;
 
 
     int[] answersCopy = Arrays.copyOf(answers, answers.length);
@@ -39,9 +39,12 @@ public class Player {
 
     public void answers() {
         for(int i : answersCopy) {
-            Arrays.fill(answersCopy, number);
-            answersCopy[i] = number;
+            i++;
+           answersCopy[i] = number;
             System.out.print(answersCopy[i] + " ");
         }
+    }
+    public void zeroing() {
+        Arrays.fill(answers, 0);
     }
 }
