@@ -7,11 +7,7 @@ public class Player {
     Scanner scan = new Scanner(System.in);
     private String name;
     private int attempts;
-    private int number;
-    int[] answers = new int[10];
-
-
-    int[] answersCopy = Arrays.copyOf(answers, answers.length);
+    private int[] number = new int[11];
 
     public int getAttempts() {
         return attempts;
@@ -29,22 +25,24 @@ public class Player {
         return name;
     }
 
-    public int getNumber() {
-        return number;
-    }
-
-    void setNumber(int number) {
-        this.number = number;
-    }
-
-    public void answers() {
-        for(int i : answersCopy) {
-            i++;
-           answersCopy[i] = number;
-            System.out.print(answersCopy[i] + " ");
+    public void setNumber(int numbers) {
+        if (number[attempts] == 0) {
+            number[attempts] = numbers;
+        } else {
+            attempts++;
+            number[attempts] = numbers;
         }
     }
+
+    public int getNumber() {
+        return number[attempts];
+    }
+
+    public int[] getNumbers() {
+        return Arrays.copyOf(number, attempts );
+    }
     public void zeroing() {
-        Arrays.fill(answers, 0);
+        Arrays.fill(number, 0, attempts, 0);
+        attempts = 0;
     }
 }
