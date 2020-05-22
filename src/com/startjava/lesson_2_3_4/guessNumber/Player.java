@@ -32,6 +32,10 @@ public class Player {
         return enteredNumbers[attempts];
     }
 
+    public int getLastEnteredNumber() {
+        return enteredNumbers[attempts - 1];
+    }
+
     public int[] getNumbers() {
         return Arrays.copyOf(enteredNumbers , attempts);
     }
@@ -39,9 +43,5 @@ public class Player {
     public void zeroing() {
         Arrays.fill(enteredNumbers, 0, attempts, 0);
         attempts = 0;
-    }
-
-    public int getLastEnteredNumber() {
-        return enteredNumbers[attempts - 1];
     }
 }
