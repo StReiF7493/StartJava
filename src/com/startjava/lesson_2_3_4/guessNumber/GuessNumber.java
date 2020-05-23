@@ -20,6 +20,9 @@ public class GuessNumber {
         while (playerTwo.getAttempts() < 10 & victory == false) {
             inputNumber(playerOne);
             compareNums(playerOne);
+            if(victory == true) {
+                break;
+            }
             inputNumber(playerTwo);
             compareNums(playerTwo);
         }
@@ -37,13 +40,15 @@ public class GuessNumber {
     }
 
     private void compareNums(Player player) {
-        if (player.getLastEnteredNumber() > compNumber) {
+        if (player.getNumber() > compNumber) {
             System.out.println("Введенное вами число больше того, что загадал компьютер");
-        } else if (player.getLastEnteredNumber() < compNumber) {
+        } else if (player.getNumber() < compNumber) {
             System.out.println("Введенное вами число меньше того, что загадал компьютер");
-        } else if (player.getLastEnteredNumber() == compNumber) {
+        } else if (player.getNumber() == compNumber) {
             victory = (true);
             System.out.println("Игрок " + player.getName() + " угадал число " + compNumber + " с " + player.getAttempts() + " попытки");
+            System.out.println("Числа введённые игроком " + playerOne.getName() + ": " + Arrays.toString(playerOne.getNumbers()));
+            System.out.println("Числа введённые игроком " + playerTwo.getName() + ": " + Arrays.toString(playerTwo.getNumbers()));
         }
     }
 

@@ -24,15 +24,11 @@ public class Player {
     }
 
     public void setNumber(int number) {
-        enteredNumbers[getAttempts()] = number;
+        enteredNumbers[attempts] = number;
         attempts++;
     }
 
     public int getNumber() {
-        return enteredNumbers[attempts];
-    }
-
-    public int getLastEnteredNumber() {
         return enteredNumbers[attempts - 1];
     }
 
