@@ -18,11 +18,11 @@ public class GuessNumber {
         compNumber = (int) (Math.random() * 101);
         while (playerTwo.getAttempts() < 10) {
             inputNumber(playerOne);
-            if(compareNums(playerOne) == true) {
+            if(compareNums(playerOne)) {
                 break;
             }
             inputNumber(playerTwo);
-            if(compareNums(playerTwo) == true) {
+            if(compareNums(playerTwo)) {
                 break;
             }
         }
